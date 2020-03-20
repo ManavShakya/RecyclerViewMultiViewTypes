@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RecyclerViewMultiViewTypes</string>
+    <string name="text_image_text">Lorem ipsum dolor sit amet, consectetur adipiscing</string>
 </resources>
