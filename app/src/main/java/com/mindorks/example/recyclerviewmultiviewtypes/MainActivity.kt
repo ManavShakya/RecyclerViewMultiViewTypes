@@ -1,8 +1,7 @@
 package com.mindorks.example.recyclerviewmultiviewtypes
 
-import android.media.MediaPlayer
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -20,21 +19,20 @@ class MainActivity : AppCompatActivity() {
         val linearLayoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
 
         recyclerView.layoutManager = linearLayoutManager
-        recyclerView.itemAnimator = DefaultItemAnimator()
         recyclerView.adapter = adapter
     }
 
     private fun createList(): MutableList<ParentModel> {
         val list = mutableListOf<ParentModel>()
-        list.add(ImageModel(R.drawable.image1))
-        list.add(TextImageModel("Hello! This is text/image View Type.", R.drawable.image2))
-        list.add(AudioModel("Hello! This is audio type view. Press on the play button to play a sample audio",R.raw.the_chainsmokers))
+        list.add(TextImageModel("Hello! This is text/image View Type.", R.drawable.image1))
+        list.add(ImageModel(R.drawable.image2))
+        list.add(AudioModel("Hello! This is audio type view. Press on the play button to play a sample audio",R.raw.sound))
         list.add(TextModel("Hello! This is text only View Type.", "Lorem ipsum dolor sit amet, consectetur adipiscing"))
         list.add(TextImageModel("Hello! This is text/image View Type.", R.drawable.image3))
         list.add(ImageModel(R.drawable.image4))
         list.add(TextModel("Hello! This is text only View Type.", "Lorem ipsum dolor sit amet, consectetur adipiscing"))
         list.add(ImageModel(R.drawable.image5))
-        list.add(AudioModel("Hello! This is audio type view. Press on the play button to play a sample audio",R.raw.the_chainsmokers))
+        list.add(AudioModel("Hello! This is audio type view. Press on the play button to play a sample audio",R.raw.sound))
         list.add(TextModel("Hello! This is text only View Type.", "Lorem ipsum dolor sit amet, consectetur adipiscing"))
         return list
     }

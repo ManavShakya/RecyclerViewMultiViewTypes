@@ -1,7 +1,6 @@
 package com.mindorks.example.recyclerviewmultiviewtypes.adapter
 
 import android.content.Context
-import android.media.MediaPlayer
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
